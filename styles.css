@@ -34,6 +34,9 @@ body {
 #main-doc {
  border: 5px solid red;
 }
+.main-section {
+ height: 50vh;
+}
 header {
  font-size: 30px bold;
 }
