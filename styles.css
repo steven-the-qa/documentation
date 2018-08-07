@@ -19,4 +19,9 @@ body {
  justify-content: flex-start;
  width: 20vw;
  height: 100vh;
+ 
+ border: 5px solid green;
+}
+#main-doc {
+ border: 5px solid red;
 }
