@@ -1,8 +1,17 @@
+@media (max-width: 800px) {
+ #navbar {
+  flex-direction: row;
+  height: 20vh;
+  width: 100vw;
+ }
+}
+
 body {
  font-size: 20px;
  display: flex;
  justify-content: flex-start;
  align-items: flex-start;
+ margin: 0 auto;
 }
 .flex {
  display: flex;
