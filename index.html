@@ -44,10 +44,53 @@
  </section>
  <section id="align-content" class="main-section flex">
    <header>align-content</header>
-   <p>Paragraph 1</p>
-   <p>Paragraph 2</p>
-   <code>Code 1</code>
-   <li>List Item 1</li>
+   <p>The CSS align-content property defines how the browser distributes space between and around content items 
+     along the cross-axis of their container, which is serving as a flexbox container. This property has no effect on single line flexible boxes.
+   </p>
+   <p>
+   The following are possible values that are widely supported on major browsers:
+     <ul>
+       <li>flex-start</li>
+       <li>center</li>
+       <li>flex-end</li>
+       <li>space-around</li>
+       <li>space-between</li>
+     </ul>
+   There are other values like "space-evenly" that are supported by some but not all browsers, so use those at your own discretion.
+   <br>
+   The following is an example of the "space-around" value applied to a flex container:
+   </p>
+   <code>
+     <style>
+       #flex-container {
+         display: flex;
+         align-content: space-around;
+       }
+       .box {
+         border: solid blue 2px;
+         background-color: orange;
+       }
+     </style>
+     <div id="flex-container">
+       <div class="box">
+         <p>Box 1</p>
+       </div>
+       <div class="box">
+         <p>Box 2</p>
+       </div>
+       <div class="box">
+         <p>Box 3</p>
+       </div>
+       <div class="box">
+         <p>Box 4</p>
+       </div>
+     </div>
+   </code>
+  <p>
+    The "space-around" value aligns the boxes on the vertical axis because the default direction of the container is "row".
+    This value creates space between the items and between the "bookend" items and the edges of the container. This as opposed to "space-between,"
+     which only creates space between the items and not at the edges.
+  </p>
  </section>
 
  <section id="Section_2" class="main-section flex">
