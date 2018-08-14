@@ -9,13 +9,7 @@ body {
  display: flex;
  margin: 0 auto;
  width: 100vw;
- justify-content: flex-end;
-}
-.flex {
- display: flex;
- flex-direction: column;
  justify-content: flex-start;
- align-items: center;
 }
 #navbar {
  position: fixed;
@@ -31,9 +25,17 @@ body {
 #main-doc {
  border: 5px solid red;
  width: 80%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
 }
 .main-section {
-margin: 10 0 10 0;
+ margin: 10 0 10 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
 }
 header {
  font: 30 bold;
