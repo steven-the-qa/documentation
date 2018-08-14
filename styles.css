@@ -21,8 +21,8 @@ body {
  justify-content: flex-start;
  width: 20%;
  height: 100vh;
- border: 5px solid green;
- font-size: 20px;
+ border: 5px solid black;
+ font-size: 20;
 }
 #main-doc {
  border: 5px solid blue;
@@ -32,6 +32,7 @@ body {
  align-items: center;
  margin-left: auto;
  width: 80vw;
+ padding: 20;
 }
 .main-section {
  margin: 10 0 10 0;
@@ -41,7 +42,7 @@ body {
  align-items: center;
 }
 header {
- font: 30 bold;
+ font: 50 bold;
  text-decoration: underline;
 }
 a {
