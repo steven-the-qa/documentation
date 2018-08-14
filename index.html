@@ -14,7 +14,7 @@
    <a class="nav-link" href="#align-items">align-items</a>
    <a class="nav-link" href="#align-self">align-self</a>
    <a class="nav-link" href="#flex-direction">flex-direction</a>
-   <a class="nav-link" href="#Section_4">Section 4</a>
+   <a class="nav-link" href="#justify-content">justify-content</a>
    <a class="nav-link" href="#Section_5">Section 5</a>
    <a class="nav-link" href="#Reference">Reference</a>
  </nav>
@@ -203,12 +203,61 @@
  </p>
  </section>
   
- <section id="Section_4" class="main-section">
-   <header>Section 4</header>
-   <p>Paragraph 1</p>
-   <p>Paragraph 2</p>
-   <code>Code 1</code>
-   <li>List Item 1</li>
+ <section id="justify-content" class="main-section">
+   <header>justify-content</header>
+   <p>
+    The CSS justify-content property defines how the browser 
+    distributes space between and around content items along the main-axis of their container.
+    The alignment is done after the lengths and auto margins are applied, meaning that, 
+    if in a Flexbox layout there is at least one flexible element, 
+    with flex-grow different from 0, it will have no effect as there won't be any available space.
+   </p>
+   <p>
+    The following are common values used for "justify-content". You'll notice "align-items" shares all of these:
+  <ul>
+    <li>flex-start</li>
+    <li>flex-end</li>
+    <li>center</li>
+    <li>space-around</li>
+    <li>space-between</li>
+  </ul>
+   <br>
+    Here is an example using the "flex-start" value:
+   </p>
+   <code>
+      <style>
+       #flex-container {
+         display: flex;
+         justify-content: flex-start;
+         background-color: red;
+         height: 300px;
+         width: 300px;
+       }
+       .box {
+         background-color: blue;
+         height: 50px;
+         width: 50px;
+         border: solid green 2px;
+       }
+     </style>
+     <div id="flex-container">
+       <div class="box">
+         <p>Box 1</p>
+       </div>
+       <div class="box">
+         <p>Box 2</p>
+       </div>
+       <div class="box">
+         <p>Box 3</p>
+       </div>
+       <div class="box">
+         <p>Box 4</p>
+       </div>
+     </div>
+   </code>
+   <p>The start of the flex container with default direction "row" is on the left side, so "justify-content: flex-start" aligns
+    the boxes in a row against the left side of the container.
+   </p>
  </section>
   
  <section id="Section_5" class="main-section">
