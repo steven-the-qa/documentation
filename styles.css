@@ -7,11 +7,12 @@
 }
 body {
  display: grid;
- grid-template-rows: 1fr;
- grid-template-columns: 1fr 4fr;
+ grid-template-rows: 100%;
+ grid-template-columns: 80%;
  margin: 0 auto;
  width: 100vw;
  border: solid 5px red;
+ justify-content: end;
 }
 #navbar {
  position: fixed;
@@ -19,7 +20,7 @@ body {
  flex-direction: column;
  align-items: center;
  justify-content: flex-start;
- width: 20vw;
+ width: 20%;
  height: 100vh;
  border: 5px solid green;
  font-size: 20px;
