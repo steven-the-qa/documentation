@@ -8,7 +8,7 @@
 body {
  display: grid;
  grid-template-rows: auto;
- grid-template-columns: 1fr 4fr;
+ grid-template-columns: 250px auto;
  margin: 0 auto;
  width: 100vw;
  justify-content: flex-start;
