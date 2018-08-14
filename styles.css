@@ -12,6 +12,7 @@ body {
  justify-content: flex-start;
  align-items: flex-start;
  margin: 0 auto;
+ width: 100vw;
 }
 .flex {
  display: flex;
@@ -26,16 +27,16 @@ body {
  flex-direction: column;
  align-items: flex-start;
  justify-content: flex-start;
- width: 20vw;
+ width: 20%;
  height: 100vh;
- 
  border: 5px solid green;
 }
 #main-doc {
  border: 5px solid red;
+ width: 80%
 }
 .main-section {
- height: 100vh;
+margin: 10 0 10 0;
 }
 header {
  font-size: 30px bold;
