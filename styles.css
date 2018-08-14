@@ -6,7 +6,9 @@
  }
 }
 body {
- display: flex;
+ display: grid;
+ grid-template-rows: auto;
+ grid-template-columns: 1fr 4fr;
  margin: 0 auto;
  width: 100vw;
  justify-content: flex-start;
@@ -24,7 +26,7 @@ body {
 }
 #main-doc {
  border: 5px solid red;
- width: 80%;
+ justify-self: end;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
