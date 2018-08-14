@@ -21,11 +21,11 @@ body {
  justify-content: flex-start;
  width: 20%;
  height: 100vh;
- border: 5px solid black;
+ background-color: peachpuff;
  font-size: 20;
 }
 #main-doc {
- border: 5px solid blue;
+ background-color: lightblue;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
