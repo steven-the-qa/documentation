@@ -5,9 +5,7 @@
   width: 100vw;
  }
 }
-
 body {
- font-size: 20px;
  display: flex;
  justify-content: flex-start;
  align-items: flex-start;
@@ -30,6 +28,7 @@ body {
  width: 20%;
  height: 100vh;
  border: 5px solid green;
+ font-size: 20px;
 }
 #main-doc {
  border: 5px solid red;
@@ -39,5 +38,17 @@ body {
 margin: 10 0 10 0;
 }
 header {
- font-size: 30px bold;
+ font: 30 bold;
+ text-decoration: underline;
+}
+a {
+ text-decoration: none;
+ color: red;
+}
+a:hover {
+ text-decoration: underline;
+ color: black;
+}
+p {
+ font: 15;
 }
