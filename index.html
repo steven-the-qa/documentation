@@ -15,7 +15,7 @@
    <a class="nav-link" href="#align-self">align-self</a>
    <a class="nav-link" href="#flex-direction">flex-direction</a>
    <a class="nav-link" href="#justify-content">justify-content</a>
-   <a class="nav-link" href="#Section_5">Section 5</a>
+   <a class="nav-link" href="#order">order</a>
    <a class="nav-link" href="#Reference">Reference</a>
  </nav>
  
@@ -260,12 +260,60 @@
    </p>
  </section>
   
- <section id="Section_5" class="main-section">
-   <header>Section 5</header>
-   <p>Paragraph 1</p>
-   <p>Paragraph 2</p>
-   <code>Code 1</code>
-   <li>List Item 1</li>
+ <section id="order" class="main-section">
+   <header>order</header>
+   <p>The order CSS property specifies the order used to lay out a flex or grid item in its flex or grid container. 
+    Items within the same container are laid out in ascending order according to their order values. 
+    Elements with the same order value are laid out in the order in which they appear in the source code.
+   </p>
+   <p>The "order" property accepts integers, so any whole number that is negative or positive:
+   <ul>
+    <li>2</li>
+    <li>-1</li>
+    <li>4</li>
+    <li>-3</li>
+   </ul>
+   <br>
+  In the following example, we order Box 3 to be at the beginning of the row:
+   </p>
+   <code>      
+    <style>
+       #flex-container {
+         display: flex;
+         justify-content: flex-start;
+         background-color: red;
+         height: 300px;
+         width: 300px;
+       }
+       .box {
+         background-color: blue;
+         height: 50px;
+         width: 50px;
+         border: solid green 2px;
+       }
+    #box-3 {
+     order: -1;
+    }
+     </style>
+     <div id="flex-container">
+       <div class="box">
+         <p>Box 1</p>
+       </div>
+       <div class="box">
+         <p>Box 2</p>
+       </div>
+       <div id="box-3" class="box">
+         <p>Box 3</p>
+       </div>
+       <div class="box">
+         <p>Box 4</p>
+       </div>
+     </div>
+  </code>
+  <p>
+   Because -1 is less than 1, the default order number of the 1st item in the container, it gets placed before the first item, 
+   itself becoming the new first item in the row.
+  </p>
  </section>
 
  <section id="Reference" class="main-section">
