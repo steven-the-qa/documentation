@@ -11,7 +11,7 @@
    <header>CSS Flexbox Documentation</header>
    <a class="nav-link" href="#Introduction">Introduction</a>
    <a class="nav-link" href="#Prior_Knowledge">Prior Knowledge</a>
-   <a class="nav-link" href="#align-content">align-content</a>
+   <a class="nav-link" href="#align-items">align-items</a>
    <a class="nav-link" href="#Section_2">Section 2</a>
    <a class="nav-link" href="#Section_3">Section 3</a>
    <a class="nav-link" href="#Section_4">Section 4</a>
@@ -41,10 +41,10 @@
      it gives you a more well-rounded perspective with which to tackle any bugs that may arise in your code while learning Flexbox.
    </p>
  </section>
- <section id="align-content" class="main-section">
-   <header>align-content</header>
-   <p>The CSS align-content property defines how the browser distributes space between and around content items 
-     along the cross-axis of their container, which is serving as a flexbox container. This property has no effect on single line flexible boxes.
+ <section id="align-items" class="main-section">
+   <header>align-items</header>
+   <p>The CSS align-items property sets the align-self value on all direct children as a group. 
+    The align-self property sets the alignment of an item within its containing block.
    </p>
    <p>
    The following are possible values that are widely supported on major browsers:
@@ -57,13 +57,13 @@
      </ul>
    There are other values like "space-evenly" that are supported by some but not all browsers, so use those at your own discretion.
    <br>
-   The following is an example of the "space-around" value applied to a flex container:
+   The following is an example of the "flex-end" value applied to a flex container:
    </p>
    <code>
      <style>
        #flex-container {
          display: flex;
-         align-content: space-around;
+         align-items: flex-end;
          background-color: red;
          height: 300px;
          width: 300px;
@@ -91,9 +91,9 @@
      </div>
    </code>
   <p>
-    The "space-around" value aligns the boxes on the vertical axis because the default direction of the container is "row".
-    This value creates space between the items and between the "bookend" items and the edges of the container. This as opposed to "space-between,"
-     which only creates space between the items and not at the edges.
+    The "flex-end" value aligns the boxes on the vertical axis because the default direction of the container is "row".
+    This value positions the boxes at the bottom of the container when the cross-axis is the vertical axis, and at the right
+    of the container when the cross-axis is the horizontal axis.
   </p>
  </section>
 
