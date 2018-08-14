@@ -19,7 +19,7 @@ body {
  flex-direction: column;
  align-items: center;
  justify-content: flex-start;
- width: 20%;
+ width: 20vw;
  height: 100vh;
  background-color: peachpuff;
  font-size: 20;
@@ -44,6 +44,7 @@ body {
 header {
  font: 50 bold;
  text-decoration: underline;
+ text-align: center;
 }
 a {
  text-decoration: none;
